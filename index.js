@@ -4,13 +4,10 @@ import React, {
 
 import {
     View,
-    // StyleSheet,
-    // Dimensions,
     Modal,
     Text,
     ScrollView,
     TouchableOpacity,
-    // Platform
 } from 'react-native';
 
 import styles from './style';
@@ -74,7 +71,7 @@ export default class ModalPicker extends BaseComponent {
     this.setState({ cancelText: this.props.cancelText });
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.onMount();
   }
 
